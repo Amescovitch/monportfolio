@@ -1,0 +1,391 @@
+
+/*on peut definir des variables sur n'importe quelle propriété pour uniformiser le traitement en cas d'usage unique*/
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --couleur1: white;
+    --couleur2: rgb(39, 218, 149);
+    --couleur3:rgb(252, 2, 177);
+    --couleur4: yellow;
+}
+
+body{
+    font-family: Arial;   
+    line-height: 1.5;           
+    }
+
+iframe{
+    width: 100%;
+    height: 350px;
+}
+
+div.cover{
+    height: 340px;
+    background: url(cover.jpg) no-repeat center/cover;
+}
+
+img.profil{
+    position: relative;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    display: block;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 6px;
+}
+
+.cover-text{
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: small;
+}
+
+div.cover-contact{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    border-left: 5px solid rgb(245, 91, 91);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.cover-contact p:first-child{
+    margin-bottom: 15px;
+
+}
+
+div.cover-contact *{
+    color: var(--couleur1);
+    font-size: 16px;
+    font-family:serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--couleur1);
+}
+
+div.cover-contact a:hover {
+    color: rgb(252, 227, 4);
+}
+
+div.cover-contact a:active{
+    color: rgb(0, 183, 255);
+}
+
+a.contact-button{  
+    color: rgb(253, 114, 114);
+    border: 3px solid rgb(223, 139, 174);
+    padding: 8px 20px;
+    background-color: rgb(37, 37, 41);
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a.contact-button-portfolio{
+    position: absolute; 
+    right: 20px; 
+    top:5px;
+}
+
+a.contact-button:hover{
+    color: var(--couleur2);
+    border: 3px solid var(--couleur2)
+}
+
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+div.section-grise1{
+    background-color: gray;
+    padding-bottom: 70px;
+ }
+
+div.section-grise1 p{
+    font-size: large;
+    color: rgb(248, 252, 252);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+
+div.section-grise2{
+    background-color: gray;
+    height: auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+div.section1-trait{
+    height: 1px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+}
+
+.section1-trait2{
+    height: 1px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+}
+
+img.col-contenu{
+    width: 40%;
+}
+
+div.col-contenu{
+    width: 60%;
+    padding-left: 16px;
+} 
+
+.float-right{
+    float: right;
+}
+
+div.text-avec-ligne-verticale{
+    margin-top: 0;
+    border-left: 4px solid var(--couleur3);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.text-avec-ligne-verticale p:first-child{
+    margin-top: 0;
+}
+
+.section a{
+    color: blue;
+    font-weight: bold;
+}
+
+div.barre-verticale{
+    height: 50px;
+    width: 4px;
+    background-color: var(--couleur3);
+    margin-right: 8px;
+}
+
+.col-portfolio{
+    width: 47%;
+}
+
+div.frame{
+    margin: 20px 15px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgb(59, 42, 56);
+}
+
+div.frame img{
+    width: 100px;
+    height: 100px;
+}
+
+p.frame-titre{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(100, 96, 109);
+    margin-top: 0;
+}
+
+a:hover {
+color: rgb(248, 149, 1);
+}
+
+a:active {
+color: rgb(255, 51, 0);
+}
+/*potfolio*/
+.portfolio-header{
+    height: 90px;
+    background: url(cover.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.portfolio-header-titre{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+h1.portfolio{
+    font-size: 26px;
+    color: black;
+    line-height: 1;
+    margin-top: 8px;
+}
+
+h2.portfolio{
+    font-size: 26px;
+    color: black;
+    font-weight:normal;
+}
+
+a.portfolio-back{
+    color:var(--couleur4);
+    margin-left: -25px;
+    border: 2px solid rgb(202, 196, 196);
+    padding: 3px 6px;
+}
+
+a.retour:hover{
+    color: white;
+    border: 3px dotted white;
+    }
+
+img.portfolio{
+    width: 70%;
+    max-width: 475px;
+}
+
+/*responsive design for mobile*/
+@media only screen and (max-width: 767px) {
+    img.profil{
+        height: 90px;
+        margin-top: 75px;
+    }
+    
+    h1{
+        font-size: 30px;
+        margin-bottom: 6px;
+        margin-top: 0;
+    }
+    
+    .cover-text{
+        margin-top: 2px;
+        font-size: 13px;
+    }
+
+    .section{
+        padding-left : 20px;
+        padding-right: 20px;
+       
+    }
+    div.section-grise1{
+         padding-bottom: 40px;
+     }
+
+    h2{
+        font-size: 30px;
+    }
+
+    img.col-contenu{
+        width: 100%;
+    }
+    
+    div.col-contenu{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    } 
+    
+
+    .col-portfolio{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div.frame{
+        margin: 0px 0px;
+        padding: 0px 0px;
+        box-shadow:none;
+    }
+
+    div.frame img{
+        width: 70px;
+        height: 70px;
+        top: -20px;
+    }
+    
+    div.cover{
+        margin-top: -70px;
+        height: 340px;
+        background: url(cover.jpg) no-repeat center/cover;
+    }
+
+    img.profil{
+        top: 40px;
+    }
+
+
+    h1{
+        margin-top: 40px;
+    }
+
+    iframe{
+        height: 450px;
+    }
+
+    
+    /*portfolio mobile*/
+
+    .portfolio-header-titre{
+        font-size: 19px;
+        padding-top: 10px;
+        padding-left: 4px;
+    }
+
+    a.contact-button{  
+        padding:7px 12px;
+        margin-top: 22px;
+        font-size: 12px;
+    }
+
+    a.contact-button-portfolio{
+        right: 8px;
+    }
+
+    h1.portfolio{
+        font-size: 40px;
+    }
+    
+    h2.portfolio{
+        font-size: 24px;
+    }
+
+    img.portfolio{
+        width: 100%;
+    }
+}
